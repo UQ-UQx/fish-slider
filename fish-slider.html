@@ -1,0 +1,73 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="fish-slider.css" media="screen" title="no title">
+  <header>
+    <link rel="stylesheet" href="absolution.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/excanvas.min.js"></script>
+    <script type="text/javascript" src="fish-slider.js"></script>
+  </header>
+  <body>
+    <div id="uqx-app">
+      <a id="app-url" href="http://uqx.uq.edu.au/" target="_blank"><img id="app-logo" src="uqx-logo-black.png"></img></a>
+      <div id="app-title">Population<br>Slider</div>
+      <div id="app-container">
+        <div id="desc-container">
+        <h3><div class="border"></div>Population Equation</h3>
+        <p class="formula">
+        N<sub>t+1</sub> = N<sub>t</sub> + r &#183; N<sub>t</sub> &#183; (1 - (N<sub>t</sub> / P<sub>max</sub>)) - C<sub>t</sub><br/>
+        where C<sub>t</sub> = N<sub>t</sub> &#183; E and P<sub>max</sub> = 100
+        </p>
+        <p class="description">
+        <b>r</b> is the <b>reproductive rate</b><br/>
+        <b>N<sub>t</sub></b> is the <b>initial population size</b><br/>
+        <b>E</b> is the <b>catch rate</b>
+        </p>
+        </div>
+        <div id="slider-container">
+          <div id="r-slider"></div>
+          <input id="r-slider-value"></input>
+          <div id="r-slider-title">r</div>
+          <div id="nt-slider"></div>
+          <input id="nt-slider-value"></input>
+          <div id="nt-slider-title">N<sub>t</sub></div>
+          <div id="e-slider"></div>
+          <input id="e-slider-value"></input>
+          <div id="e-slider-title">E</div>
+        </div>
+        <div id="chart-container">
+          <div id="plot-holder"></div>
+          <div id="hover-info"><b>Hover over line to see N<sub>t+1</sub></b></div>
+          <div id="selected-point"><b>Selected point:</b> t = , N<sub>t+1</sub> =</div>
+          <div class="x-axis-label">t</div>
+          <div class="y-axis-label">N<sub>t+1</sub></div>
+        </div>
+        <div id="catch-chart-container">
+          <div id="catch-plot-holder"></div>
+          <div id="catch-hover-info"><b>Hover over line to see C<sub>t</sub><b></div>
+          <div class="x-axis-label">t</div>
+          <div class="y-axis-label">C<sub>t</sub></div>
+        </div>
+        <div id="fish-tank-container">
+          <img id="fish-1" class="fish" src="coral-trout.png"/>
+          <img id="fish-2" class="fish" src="coral-trout.png"/>
+          <img id="fish-3" class="fish" src="coral-trout.png"/>
+          <img id="fish-4" class="fish" src="coral-trout.png"/>
+          <img id="fish-5" class="fish" src="coral-trout.png"/>
+          <img id="fish-6" class="fish" src="coral-trout.png"/>
+          <img id="fish-7" class="fish" src="coral-trout.png"/>
+          <img id="fish-8" class="fish" src="coral-trout.png"/>
+          <img id="fish-9" class="fish" src="coral-trout.png"/>
+          <img id="fish-10" class="fish" src="coral-trout.png"/>
+          <img id="fish-11" class="fish" src="coral-trout.png"/>
+          <img id="fish-12" class="fish" src="coral-trout.png"/>
+          <img id="fish-13" class="fish" src="coral-trout.png"/>
+          <img id="fish-14" class="fish" src="coral-trout.png"/>
+          <img id="fish-15" class="fish" src="coral-trout.png"/>
+		      <img id="fish-tank-bg" src="fish-tank.jpg"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
