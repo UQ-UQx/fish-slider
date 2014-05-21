@@ -148,11 +148,11 @@ input#nt-slider-value, input#r-slider-value, input#e-slider-value {
 	color: #000;
 }
 
-input#r-slider-value {
+input#nt-slider-value {
 	left: 10px;
 }
 
-input#nt-slider-value {
+input#r-slider-value {
 	left: 75px;
 }
 
@@ -160,11 +160,11 @@ input#e-slider-value {
 	left: 140px;
 }
 
-div#r-slider {
+div#nt-slider {
 	left: 26px;
 }
 
-div#nt-slider {
+div#r-slider {
 	left: 92px;
 }
 
@@ -183,11 +183,11 @@ div#nt-slider-title, div#r-slider-title, div#e-slider-title {
 	text-align: center;
 }
 
-div#r-slider-title {
+div#nt-slider-title {
 	left: 10px;
 }
 
-div#nt-slider-title {
+div#r-slider-title {
 	left: 75px;
 }
 
